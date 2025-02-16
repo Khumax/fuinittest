@@ -27,10 +27,10 @@ public class CashbackHackServiceTest {
     @org.junit.Test
     public void shouldNotSuggestAddingGoodsIfEqualToBoundary() {
         CashbackHackService service = new CashbackHackService();
-        int amount = 998;
+        int amount = 1000;
 
         int actual = service.remain(amount);
-        int expected = 2;
+        int expected = 0;
         assertEquals(expected, actual);
     }
 
